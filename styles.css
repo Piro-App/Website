@@ -1,0 +1,171 @@
+body{
+    background: #36373F;
+    font-family: rooney-sans,sans-serif;
+    overflow-x: hidden;
+}
+
+.background-container{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: -10;
+}
+
+h1{
+    font-family: rooney-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-container {
+    width: 100%;
+}
+
+.content-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 36px;
+    padding-right: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 64px;
+}
+
+.text-container {
+    width: 100%;
+    font-family: rooney-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color:#C9C4CD;
+
+}
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item {
+    font-family: rooney-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #C9C4CD;
+}
+a {
+    text-decoration: none;
+}
+.logo-container {
+    width: 100%;
+    height: 40px;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+    background-image: url("./assets/pirologo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.app-store-btn {
+    height: 40px;
+    width: 135px;
+    background-image: url("./assets/testflight.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.google-play-btn {
+    height: 40px;
+    width: 135px;
+    background-image: url("./assets/googleplay.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.store-btns-container {
+    width: 300px;
+    display: flex;
+    flex-direction:row;
+    /* justify-items: flex-start; */
+    align-items: flex-start;
+    gap: 20px;
+}
+.btn-hint{
+    display:flex;
+    width:135px;
+    flex-direction: column;
+    justify-items:flex-start;
+    align-items: center;
+    gap: 4px;
+    opacity: 50%;
+}
+.hint {
+    color: #C9C4CD;
+    font-size: 0.7rem;
+}
+.preview-container {
+    width: 100%;
+    object-fit: contain;
+
+}
+.preview-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-device-width: 1200px){
+    .background-container {
+        background-image: url("./assets/pc.svg");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .preview-container {
+        display:none;
+    }
+
+    .content-wrapper {
+        height: 100%;
+        padding-left: 72px;
+        padding-right: 72px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        align-items: flex-start;
+        gap: 120px;
+    }
+    .title-container {
+        width: 560px;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+        position: fixed;
+        bottom:48px;
+    }
+    
+}
