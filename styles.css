@@ -75,36 +75,23 @@ a {
 .logo {
     width: 120px;
     height: 40px;
-    background-image: url("./assets/pirologo.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 
 .app-store-btn {
     height: 40px;
     width: 135px;
-    background-image: url("./assets/testflight.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .google-play-btn {
     height: 40px;
     width: 135px;
-    background-image: url("./assets/googleplay.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .store-btns-container {
     width: 300px;
     display: flex;
     flex-direction:row;
-    /* justify-items: flex-start; */
     align-items: flex-start;
     gap: 20px;
 }
